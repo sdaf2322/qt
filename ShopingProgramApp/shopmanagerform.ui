@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShopManagerForm</class>
+ <widget class="QWidget" name="ShopManagerForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Client Info</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="listVerticalLayout">
+       <item>
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="rootIsDecorated">
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ProductName</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Option</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quantity</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ShopDate</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>productId</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Price</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QToolBox" name="toolBox">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="inputPage">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>346</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>&amp;Input</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QFormLayout" name="productFormLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="idLabel">
+            <property name="text">
+             <string>I&amp;D</string>
+            </property>
+            <property name="buddy">
+             <cstring>idLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="idLineEdit">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="clientIdLabel">
+            <property name="text">
+             <string>ClientID</string>
+            </property>
+            <property name="buddy">
+             <cstring>clientIdLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="clientIdLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="productIdLabel">
+            <property name="text">
+             <string>ProductID</string>
+            </property>
+            <property name="buddy">
+             <cstring>productIdLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="productIdLineEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="shopDateLabel">
+            <property name="text">
+             <string>ShopDate</string>
+            </property>
+            <property name="buddy">
+             <cstring>shopDateLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="shopDateLineEdit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="quantityLabel">
+            <property name="text">
+             <string>Quantity</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="quantityLineEdit"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="optionLabel">
+            <property name="text">
+             <string>Option</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="optionLineEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="addPushButton">
+            <property name="text">
+             <string>&amp;Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="searchPage">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>346</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>&amp;Search</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTreeWidget" name="searchTreeWidget">
+          <property name="rootIsDecorated">
+           <bool>false</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ClientID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ProductID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ShopDate</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Quantity</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Option</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QComboBox" name="searchComboBox">
+            <item>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ClientID</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ProductID</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ShopDate</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="searchLineEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="searchPushButton">
+          <property name="text">
+           <string>S&amp;earch</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
