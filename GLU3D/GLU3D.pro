@@ -6,7 +6,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets openglwidgets
 CONFIG += c++17
 
 windows{
-    LIBS += -lopengl32
+    LIBS += -lopengl32 -lglu32
     LIBS += -lfreeglut -LC:\QtHomeCode\glut\lib\x64
 }
 
@@ -16,11 +16,9 @@ windows{
 
 SOURCES += \
     main.cpp \
-    qtglut.cpp \
     widget.cpp
 
 HEADERS += \
-    qtglut.h \
     widget.h
 
 # Default rules for deployment.

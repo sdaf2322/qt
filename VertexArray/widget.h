@@ -1,6 +1,6 @@
 #ifndef WIDGET_H
 #define WIDGET_H
-#include <GL/glut.h>
+
 #include <QWidget>
 #include <QtOpenGL>
 #include <QtOpenGLWidgets>
@@ -14,6 +14,9 @@ public:
     ~Widget();
 
     GLfloat xAngle, yAngle, zAngle;
+
+protected:
+    void keyPressEvent(QKeyEvent* event);
 
 private:
     virtual void initializeGL() override;

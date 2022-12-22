@@ -1,5 +1,5 @@
 #include "widget.h"
-#include <GL/glut.h>
+#include "qtglut.h"
 Widget::Widget(QWidget *parent)
     : QOpenGLWidget(parent)
 {
@@ -27,31 +27,32 @@ void Widget::resizeGL(int w, int h)
 
 void Widget::paintGL()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
-    glPushMatrix();
+//    glClear(GL_COLOR_BUFFER_BIT);
+//    glPushMatrix();
 
-    glRotatef(xAngle, 1.0f, 0.0f, 0.0f);
-    glRotatef(yAngle, 0.0f, 1.0f, 0.0f);
-    glRotatef(zAngle, 0.0f, 0.0f, 1.0f);
+//    glRotatef(xAngle, 1.0f, 0.0f, 0.0f);
+//    glRotatef(yAngle, 0.0f, 1.0f, 0.0f);
+//    glRotatef(zAngle, 0.0f, 0.0f, 1.0f);
 
-    glutWireTeapot(0.3);
+//    glutWireTeapot(0.3);
 
-    glPushMatrix();
-    glTranslatef(-0.6, -0.6, 0.0);
-    glutWireCube(0.4);
-    glPopMatrix();
+//    glPushMatrix();
+//    glTranslatef(-0.6, -0.6, 0.0);
+//    glutWireCube(0.4);
+//    glPopMatrix();
 
 
-    glPushMatrix();
-    glTranslatef(-0.6, -0.6, 0.0);
-    glutWireSphere(0.3, 20, 20);
-    glPopMatrix();
+//    glPushMatrix();
+//    glTranslatef(-0.6, -0.6, 0.0);
+//    glutWireSphere(0.3, 20, 20);
+//    glPopMatrix();
 
-    glPushMatrix();
-    glTranslatef(0.6, 0.6, 0.6);
-    glutWireCone(0.3, 0.6, 20, 10);
-    glPopMatrix();
+//    glPushMatrix();
+//    glTranslatef(0.6, 0.6, 0.6);
+//    glutWireCone(0.3, 0.6, 20, 10);
+//    glPopMatrix();
 
-    glPopMatrix();
+//    glPopMatrix();
+    glutSolidSphere(0.5, 200, 200);
     glFlush();
 }

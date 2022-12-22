@@ -16,11 +16,9 @@ windows{
 
 SOURCES += \
     main.cpp \
-    qtglut.cpp \
     widget.cpp
 
 HEADERS += \
-    qtglut.h \
     widget.h
 
 # Default rules for deployment.
