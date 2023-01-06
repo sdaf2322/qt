@@ -38,6 +38,9 @@ private slots:
     void sendFile();                                                // 파일전송
     void goOnSend(qint64);                                          // 파일전송 과정
     void connectButton_clicked();                                   // 로그인 버튼 누를경우
+    void Patient_Gender_Male_pushButton_clicked();
+    void Patient_Gender_Female_pushButton_clicked();
+    void Patient_Gender_None_pushButton_clicked();
 
 private:
     void closeEvent(QCloseEvent*) override;
@@ -53,7 +56,6 @@ private:
     LogThread* logThread;
     QString Gender;
     Ui::Nurse *ui;
-
-
 };
+
 #endif // NURSE_H
